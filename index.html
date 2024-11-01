@@ -9,18 +9,19 @@
     
     <script>
 
-        let array, sum;
+        let array = [];
+        let sum = 0;
         alert("Ingrese 10 números enteros al arreglo, a continuación");
-        for (i = 1; i <= 10; i++){
-            array[i]=parseInt(prompt("Numero" + i));
+        for (let i = 1; i <= 10; i++){
+            array[i]=parseInt(prompt("Numero " + i));
             sum+=array[i];
             
         }
         alert("La suma de todos los números ingresados es: \n" + sum);
 
         //modificado para promedio:
-        let prom = sum/i;
-        alert("El promedio de los números ingresados es:\n"+prom)
+        let prom = parseFloat(sum/10);
+        alert("El promedio de los números ingresados es:\n" + prom);
     </script>
 </body>
 </html>
